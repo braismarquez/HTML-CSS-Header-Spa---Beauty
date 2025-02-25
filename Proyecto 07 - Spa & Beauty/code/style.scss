@@ -1,0 +1,219 @@
+$azul: #264065;
+$verde: #A9D6CB; 
+$gris: #909090; 
+$blanco: #FAF8F5;
+$negro: #070D15;
+$transparente: #FFFFFF80;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+
+.rectangle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 550px;
+    height: 600px;
+}
+
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.header_menu{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    a{
+        text-decoration: none;
+        color: $azul;
+    }
+}
+
+.header_links{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    a.link1{
+        color: $azul;
+    }
+    a.link2{
+        color: white;
+        background-color: $azul;
+        padding: 15px 30px;
+        border-radius: 25px;
+        text-decoration: none;
+    }
+}
+
+
+.hero{
+    max-width: 600px;
+    &_title{
+        color: $azul;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 60px;
+        margin-bottom: 0;
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    &_subtitle{
+        color: $gris;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+    &_links{
+        padding-top: 50px;
+        padding-bottom: 80px;
+        display: flex;
+        list-style: none;
+        gap: 110px;
+        align-items: center;
+        margin: 0;
+        &_btn{
+            background-color: $azul;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        &_img{
+            position: absolute;
+            height: 100px;
+            left: 19%;
+        }
+
+        &_play{
+            text-decoration: none;
+            color: $azul;
+        }
+    }
+    &_data{
+        display: flex;
+        gap: 5px;
+        background-color: #FFFFFFCC;
+        padding: 30px 30px 30px 0px;
+        justify-content: start;
+        align-items: start;
+        }
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        article h3{
+            color: $azul;
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-weight: 500;
+            
+        }
+        article p{
+            color: $gris;
+            font-size: 20px;
+            text-align: center;
+            line-height: 27px;
+        }
+    }
+
+    .mujer{
+        position: absolute;
+        width: 1100px;
+        top: 2%;
+        right: 1%;
+        z-index: 1;
+    }
+
+    .flor{
+        position: absolute;
+        top: 80px;
+        right: 180px;
+        opacity: 5%;
+        z-index: -1;
+        width: 350px;
+    }
+
+
+.info{
+    font-size: 16px;
+    background-color: $transparente;
+    position: absolute;
+    right: 20px;
+    top: 290px;
+    max-width: 315px;
+    padding: 15px;
+    line-height: 22px;
+    border-radius: 10px;
+    backdrop-filter: blur(16px);
+    img{
+        width: 25px;
+    }
+    &_principal{
+        color: $negro;
+        font-weight: 400;
+    }
+    &_name{
+        color: $azul;
+        padding-top: 10px;
+        font-weight: 700;
+    }
+}
+
+.info2{
+    font-size: 16px;
+    background-color: $transparente;
+    position: absolute;
+    right: 150px;
+    bottom: -30px;
+    max-width: 315px;
+    padding: 15px;
+    line-height: 22px;
+    border-radius: 10px;
+    z-index: 2;
+    backdrop-filter: blur(16px);
+    img{
+        width: 25px;
+    }
+    &_principal2{
+        color: $negro;
+        font-weight: 400;
+    }
+    &_name2{
+        color: $azul;
+        padding-top: 10px;
+        font-weight: 700;
+    }
+}
+
+
+
